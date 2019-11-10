@@ -13,7 +13,7 @@ void swap(int *a, int size)
 			}
 		}
 	}
-	//버블정렬
+	//Bubble sort
 }
 
 int main() {
