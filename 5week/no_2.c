@@ -1,5 +1,5 @@
 #include <stdio.h>
-int SIZE = 5;
+#define SIZE 5
 void swap(int *a, int size)
 {
 	int i, j;
@@ -17,11 +17,18 @@ void swap(int *a, int size)
 }
 
 int main() {
-
-	int a[5] = { 3,4,2,5,1 };
-	swap(a, SIZE);
-	for (int i = 0; i < 5; i++)
+	int *a;
+	int b[SIZE];
+	for (int j = 0; j < SIZE; j++)
 	{
-		printf("%d ", a[i]);
+		scanf("%d", &b[j]);
 	}
+	a = b;
+	swap(a, SIZE);
+	for (int i = 0; i < SIZE; i++)
+	{
+		printf("%d ", *a);
+		a++;
+	}
+	//printf("%d ", *a);
 }
