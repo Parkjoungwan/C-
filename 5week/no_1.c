@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 int main() {
-
 	int *k;
 	int ko;
 	k = &ko;

@@ -8,10 +8,13 @@ int main() {
 	{
 		printf("a[%d]의 주소값: %u\n", i, &a[i]);
 	}
-	/*
-	printf("%d", b);
-	printf("%d", *b);
-	printf("%d", b++);
-	printf("%d", *(b)++);
-	*/
+	
+	printf("%d\n", b);
+
+	printf("%d\n", *b);
+
+	printf("%d\n", ++b);
+
+	printf("%d\n", ++*(b));
+	
 }
